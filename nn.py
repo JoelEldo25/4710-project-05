@@ -1,7 +1,9 @@
 import torch
 from torch import nn
+from sleepdataset import SleepDataset
 from torch.utils.data import DataLoader
 
+dataset = SleepDataset("ss.csv")
 class SleepNetwork(nn.Module):
     def __init__(self):
         self.flatten = nn.Flatten()
