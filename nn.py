@@ -8,11 +8,11 @@ class SleepNetwork(nn.Module):
     def __init__(self):
         self.flatten = nn.Flatten()
         self.layers = nn.Sequential(
-            nn.Linear(10,10),
+            nn.Linear(6,10),
             nn.ReLU(),
             nn.Linear(10,10),
             nn.ReLU,
-            nn.Linear(10,10),
+            nn.Linear(10,1),
         )
 
     def forward(self, x):
