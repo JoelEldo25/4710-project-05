@@ -11,7 +11,7 @@ class SleepDataset(Dataset):
         self.targets = []
         next(reader)
         for row in reader:
-            datum = [row[2]] + [row[4]] + row[6:8] + [row[10]]
+            datum = [row[2]] + [row[4]] + row[6:8] + [row[10]] + [float(row[11])/1000]
             self.targets.append([float(row[5])])
             for i in range(len(datum)):
                 datum[i] = float(datum[i])
