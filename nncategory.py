@@ -15,12 +15,13 @@ train_dataset,test_dataset=torch.utils.data.random_split(dataset,(train_size,tes
 train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 test_dataloader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
 
+
 class SleepNetwork(nn.Module):
     def __init__(self):
         super().__init__()
         self.flatten = nn.Flatten()
         self.layers = nn.Sequential(
-            nn.Linear(6,20),
+            nn.Linear(7,20),
             nn.ReLU(),
             nn.Linear(20,20),
             nn.ReLU(),
@@ -63,13 +64,13 @@ def test(dataloader, model, loss_fn, iter):
 
 
 model = SleepNetwork()
-loss_fn = nn.MSELoss()
+loss_fn = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 
 for t in range(epochs):
     #print(f"Epoch {t+1}\n-------------------------------")
     train(train_dataloader, model, loss_fn, optimizer)
-    if (t+1) % 1000 == 0:
+    if (t+1) % 100 == 0:
         test(test_dataloader, model, loss_fn, t)
 
 print("Done!")
