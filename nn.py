@@ -52,7 +52,6 @@ def train(dataloader, model, loss_function, optimizer):
 
 def test(dataloader, model, loss_fn, iter):
     model.eval()
-    size = len(dataloader.dataset)
     num_batches = len(dataloader)
     test_loss, correct = 0, 0
 
@@ -63,7 +62,7 @@ def test(dataloader, model, loss_fn, iter):
 
     test_loss /= num_batches
     val_loss.append(test_loss)
-    if(iter+1) % 100 == 0:
+    if(iter+1) % 1000 == 0:
         print(f"Test Error: Avg loss: {test_loss:>8f} \n")
 
 
