@@ -1,18 +1,24 @@
 import torch
+import sys
 from torch import nn
 from sleepdataset import SleepDataset
 from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
+import statistics
 
 batch_size=64
 learning_rate=0.001
 epochs=4001
 train_size=300
 test_size=73
+times = int(sys.argv[1]) if len(sys.argv) > 1 else 1
 
-x_vals = []
+x_vals = [i+1 for i in range(0, epochs, 10)]
 val_loss = []
 train_loss = []
+val_agg = []
+train_agg = []
+cols = [[],[],[],[],[],[],[],[]]
 dataset = SleepDataset("data/ss.csv")
 
 
@@ -68,44 +74,65 @@ def test(dataloader, model, loss_fn, iter):
             test_loss += loss_fn(pred, y).item()
 
     test_loss /= num_batches
-    val_loss.append(test_loss)
-    x_vals.append(iter + 1)
-    if iter % 1000 == 0:
-        print(f"Test Error: Avg loss: {test_loss:>8f} \n")
+    return test_loss
 
 
-train_dataset,test_dataset=torch.utils.data.random_split(dataset,(train_size,test_size))
+for i in range(times):
+    train_dataset,test_dataset=torch.utils.data.random_split(dataset,(train_size,test_size))
 
-train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-test_dataloader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
+    train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    test_dataloader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
 
-model = SleepNetwork()
-loss_fn = nn.MSELoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    model = SleepNetwork()
+    loss_fn = nn.MSELoss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-for t in range(epochs):
-    train(train_dataloader, model, loss_fn, optimizer, t)
-    if t % 10 == 0:
-        test(test_dataloader, model, loss_fn, t)
+    for t in range(epochs):
+        train(train_dataloader, model, loss_fn, optimizer, t)
+        if t % 10 == 0:
+            val_loss.append(test(test_dataloader, model, loss_fn, t))
+
+    val_agg.append(val_loss)
+    train_agg.append(train_loss)
+    val_loss = []
+    train_loss = []
+
+    for i in range(8):
+        dataset.shuffle(i)
+        var_dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
+        loss = test(var_dataloader, model, loss_fn, 1)
+        cols[i].append(loss)
+        dataset.reset()
+
+    val_loss = []
+    train_loss = []
+
+val_loss = [statistics.mean([val_agg[time][epoch] for time in range(times)]) for epoch in range(int(epochs/10+1))]
+train_loss = [statistics.mean([train_agg[time][epoch] for time in range(times)]) for epoch in range(int(epochs/10+1))]
 
 line1, = plt.plot(x_vals, val_loss, label='Validation Loss')
 line2, = plt.plot(x_vals, train_loss, label='Training Loss')
 plt.legend(handles=[line1, line2])
-plt.ylabel('Average Test Loss')
+plt.ylabel('Average Loss')
 plt.yscale("log")
 plt.xlabel('Epoch')
 plt.show()
 
-print("Full data")
-full_dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
-test(full_dataloader, model, loss_fn, 0)
+if times > 1:
+    val_stdev = [statistics.stdev([val_agg[time][epoch] for time in range(times)]) for epoch in range(int(epochs/10+1))]
+    train_stdev = [statistics.stdev([train_agg[time][epoch] for time in range(times)]) for epoch in range(int(epochs/10+1))]
+    line1, = plt.plot(x_vals, val_stdev, label='Validation Loss stdev')
+    line2, = plt.plot(x_vals, train_stdev, label='Training Loss stdev')
+    plt.legend(handles=[line1, line2])
+    plt.ylabel('Stdev of average losses')
+    plt.yscale("log")
+    plt.xlabel('Epoch')
+    plt.show()
 
 for i in range(8):
-    dataset = SleepDataset("data/ss.csv")
-    dataset.shuffle(i)
-    var_dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
     print("Column",i)
-    test(var_dataloader, model, loss_fn, 0)
-
+    print(statistics.mean(cols[i]))
+    if(times > 1):
+        print(statistics.stdev(cols[i]))
 
 
