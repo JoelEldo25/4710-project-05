@@ -106,6 +106,7 @@ for i in range(times):
 
     val_loss = []
     train_loss = []
+    print("Done with iteration", i + 1)
 
 val_loss = [statistics.mean([val_agg[time][epoch] for time in range(times)]) for epoch in range(int(epochs/10+1))]
 train_loss = [statistics.mean([train_agg[time][epoch] for time in range(times)]) for epoch in range(int(epochs/10+1))]
@@ -131,8 +132,9 @@ if times > 1:
 
 for i in range(8):
     print("Column",i)
-    print(statistics.mean(cols[i]))
+    print("Mean Loss for column",i,"-",statistics.mean(cols[i]))
     if(times > 1):
-        print(statistics.stdev(cols[i]))
+        print("Stdev of Loss for column",i,"-",statistics.stdev(cols[i]))
+        print("Stdev of Loss for column",i,"-",statistics.stdev(cols[i]))
 
 
