@@ -18,7 +18,7 @@ val_loss = []
 train_loss = []
 val_agg = []
 train_agg = []
-cols = [[],[],[],[],[],[],[],[]]
+cols = [[],[],[],[],[],[],[],[],[],[]]
 dataset = SleepDataset("data/ss.csv")
 
 
@@ -27,7 +27,7 @@ class SleepNetwork(nn.Module):
         super().__init__()
         self.flatten = nn.Flatten()
         self.layers = nn.Sequential(
-            nn.Linear(8,20, bias=True),
+            nn.Linear(10,20, bias=True),
             nn.ReLU(),
             nn.Linear(20, 20, bias=True),
             nn.ReLU(),
@@ -97,7 +97,7 @@ for i in range(times):
     val_loss = []
     train_loss = []
 
-    for i in range(8):
+    for i in range(10):
         dataset.shuffle(i)
         var_dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
         loss = test(var_dataloader, model, loss_fn, 1)
@@ -130,7 +130,7 @@ if times > 1:
     plt.xlabel('Epoch')
     plt.show()
 
-for i in range(8):
+for i in range(10):
     print("Column",i)
     print("Mean Loss for column",i,"-",statistics.mean(cols[i]))
     if(times > 1):
