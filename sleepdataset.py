@@ -17,6 +17,7 @@ class SleepDataset(Dataset):
                 datum[i] = float(datum[i])
             self.data.append(datum)
         self.data = tensor(self.data)
+        self.origin = self.data.clone().detach()
         self.targets = tensor(self.targets)
 
     def __len__(self):
@@ -34,6 +35,9 @@ class SleepDataset(Dataset):
             temp = tens[index]
             tens[index] = self.data[randval][index]
             self.data[randval][index] = temp
+
+    def reset(self):
+        self.data = self.origin.clone().detach()
 
 
 

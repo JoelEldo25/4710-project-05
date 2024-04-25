@@ -1,6 +1,6 @@
 import csv
 
-import torch
+from random import randint
 from torch.utils.data import Dataset
 from torch import tensor
 
@@ -19,6 +19,7 @@ class SleepDatasetCategorical(Dataset):
                 datum[i] = float(datum[i])
             self.data.append(datum)
         self.data = tensor(self.data)
+        self.origin = self.data.clone().detach()
         self.targets = tensor(self.targets)
 
     def __len__(self):
@@ -36,3 +37,6 @@ class SleepDatasetCategorical(Dataset):
             temp = tens[index]
             tens[index] = self.data[randval][index]
             self.data[randval][index] = temp
+
+    def reset(self):
+        self.data = self.origin.clone().detach()
