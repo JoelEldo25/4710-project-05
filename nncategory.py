@@ -6,10 +6,13 @@ import matplotlib.pyplot as plt
 
 batch_size=64
 learning_rate=0.001
-epochs=3000
+epochs = 4001
 train_size=300
 test_size=73
 
+x_vals = []
+val_acc = []
+train_acc = []
 val_loss = []
 train_loss = []
 dataset = SleepDatasetCategorical("ss.csv")
@@ -36,20 +39,35 @@ class SleepNetwork(nn.Module):
         logits = self.layers(x)
         return logits
 
-def train(dataloader, model, loss_function, optimizer):
+def train(dataloader, model, loss_function, optimizer, iter):
     model.train()
-    correct = 0
-    size = len(dataloader.dataset)
-    for batch, (X, y) in enumerate(dataloader):
-        pred = model(X)
-        loss = loss_function(pred, y)
-        correct += (pred.argmax(1) == y.argmax(1)).type(torch.float).sum().item()
+    if iter % 10 == 0:
+        correct = 0
+        avgloss = 0
+        size = len(dataloader.dataset)
+        num_batches = len(dataloader)
+        for batch, (X, y) in enumerate(dataloader):
+            pred = model(X)
+            loss = loss_function(pred, y)
+            correct += (pred.argmax(1) == y.argmax(1)).type(torch.float).sum().item()
+            avgloss += loss.item()
 
-        loss.backward()
-        optimizer.step()
-        optimizer.zero_grad()
-    correct /= size
-    train_loss.append(1-correct)
+            loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
+        correct /= size
+        avgloss /= num_batches
+        train_loss.append(avgloss)
+        train_acc.append(1-correct)
+    else:
+        for batch, (X, y) in enumerate(dataloader):
+            pred = model(X)
+            loss = loss_function(pred, y)
+
+            loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
+
 
 def test(dataloader, model, loss_fn, iter):
     model.eval()
@@ -65,8 +83,10 @@ def test(dataloader, model, loss_fn, iter):
 
     test_loss /= num_batches
     correct /= size
-    val_loss.append(1-correct)
-    if (t+1) %1000 == 0:
+    val_acc.append(1-correct)
+    val_loss.append(test_loss)
+    x_vals.append(iter+1)
+    if t %1000 == 0:
         print(f"Test Error: Avg loss: {test_loss:>8f} \nAccuracy: {(100*correct):>0.1f}%")
 
 
@@ -75,12 +95,20 @@ loss_fn = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 for t in range(epochs):
-    train(train_dataloader, model, loss_fn, optimizer)
-    test(test_dataloader, model, loss_fn, t)
+    train(train_dataloader, model, loss_fn, optimizer, t)
+    if t%10 == 0:
+        test(test_dataloader, model, loss_fn, t)
 
-line1, = plt.plot(val_loss, label='Validation Loss')
-line2, = plt.plot(train_loss, label='Training Loss')
+fig, (ax1, ax2)  = plt.subplots(2)
+line1, = ax1.plot(x_vals, val_acc, label='Validation Inaccuracy')
+line2, = ax1.plot(x_vals, train_acc, label='Training Inaccuracy')
 plt.legend(handles=[line1, line2])
 plt.ylabel('Inaccuracy')
+plt.xlabel('Epoch')
+
+line3, = ax2.plot(x_vals, val_loss, label='Validation Loss')
+line4, = ax2.plot(x_vals, train_loss, label='Training Loss')
+plt.legend(handles=[line3, line4])
+plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.show()

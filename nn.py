@@ -6,10 +6,11 @@ import matplotlib.pyplot as plt
 
 batch_size=64
 learning_rate=0.001
-epochs=3000
+epochs=4001
 train_size=300
 test_size=73
 
+x_vals = []
 val_loss = []
 train_loss = []
 dataset = SleepDataset("data/ss.csv")
@@ -35,19 +36,28 @@ class SleepNetwork(nn.Module):
         logits = self.layers(x)
         return logits
 
-def train(dataloader, model, loss_function, optimizer):
+def train(dataloader, model, loss_function, optimizer, iter):
     model.train()
-    avgloss = 0
-    for batch, (X, y) in enumerate(dataloader):
-        pred = model(X)
-        loss = loss_function(pred, y)
-        avgloss += loss.item()
+    if iter%10 == 0:
+        avgloss = 0
+        for batch, (X, y) in enumerate(dataloader):
+            pred = model(X)
+            loss = loss_function(pred, y)
+            avgloss += loss.item()
 
-        loss.backward()
-        optimizer.step()
-        optimizer.zero_grad()
-    avgloss /= batch_size
-    train_loss.append(avgloss)
+            loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
+        avgloss /= batch_size
+        train_loss.append(avgloss)
+    else:
+        for batch, (X, y) in enumerate(dataloader):
+            pred = model(X)
+            loss = loss_function(pred, y)
+
+            loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
 
 
 def test(dataloader, model, loss_fn, iter):
@@ -62,7 +72,8 @@ def test(dataloader, model, loss_fn, iter):
 
     test_loss /= num_batches
     val_loss.append(test_loss)
-    if(iter+1) % 1000 == 0:
+    x_vals.append(iter + 1)
+    if iter % 1000 == 0:
         print(f"Test Error: Avg loss: {test_loss:>8f} \n")
 
 
@@ -71,12 +82,13 @@ loss_fn = nn.MSELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 for t in range(epochs):
-    train(train_dataloader, model, loss_fn, optimizer)
-    test(test_dataloader, model, loss_fn, t)
+    train(train_dataloader, model, loss_fn, optimizer, t)
+    if t % 10 == 0:
+        test(test_dataloader, model, loss_fn, t)
 
 
-line1, = plt.plot(val_loss, label='Validation Loss')
-line2, = plt.plot(train_loss, label='Training Loss')
+line1, = plt.plot(x_vals, val_loss, label='Validation Loss')
+line2, = plt.plot(x_vals, train_loss, label='Training Loss')
 plt.legend(handles=[line1, line2])
 plt.ylabel('Average Test Loss')
 plt.yscale("log")
