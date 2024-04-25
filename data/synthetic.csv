@@ -1,0 +1,374 @@
+Person ID,Gender,Age,Occupation,Sleep Duration,Quality of Sleep,Physical Activity Level,Stress Level,BMI Category,Blood Pressure,Heart Rate,Daily Steps,Sleep Disorder
+46456170,Female,55,Engineer,8.2,8,61,5,Overweight,135/90,86,6540,Insomnia
+709059321,Male,52,Engineer,6.5,8,85,3,Normal,135/90,86,7753,
+785397547,Female,51,Salesperson,7.7,9,90,5,Normal,140/95,86,9027,Sleep Apnea
+627540972,Female,31,Nurse,6.3,6,50,7,Normal,130/86,86,5950,Insomnia
+174781171,Female,42,Nurse,7.4,7,62,8,Normal,120/80,86,6177,Sleep Apnea
+539408806,Female,52,Nurse,8.4,9,46,4,Normal,125/80,86,6840,
+47177423,Male,28,Doctor,7.3,9,59,4,Normal Weight,115/75,86,7401,
+578775313,Female,30,Doctor,7.6,7,45,8,Obese,125/80,86,5660,
+384816952,Male,38,Lawyer,7.9,7,68,6,Normal,115/75,86,9504,
+996185601,Male,47,Engineer,8.2,9,81,5,Normal Weight,128/85,86,9065,
+526206468,Male,47,Accountant,6.9,7,56,8,Overweight,135/90,86,9747,
+956362403,Male,30,Engineer,7.6,8,55,3,Normal,125/80,86,4714,
+516770653,Female,51,Lawyer,6.1,8,35,3,Overweight,130/85,86,4504,Insomnia
+415307540,Male,28,Nurse,6.4,8,81,4,Normal Weight,130/85,86,9222,
+250285647,Female,54,Teacher,8.3,9,60,6,Normal,130/85,86,7260,
+164479007,Female,58,Salesperson,7.3,9,80,5,Overweight,140/95,86,7410,Insomnia
+241745528,Female,27,Nurse,6.1,8,49,6,Obese,125/80,86,6782,
+385932278,Female,57,Accountant,8.4,8,77,7,Normal,135/90,86,8257,Sleep Apnea
+270926473,Female,49,Nurse,6.6,8,78,3,Normal,130/85,86,8203,
+707779835,Male,52,Nurse,7.1,8,42,6,Normal,130/85,86,5371,Sleep Apnea
+549412626,Male,47,Teacher,7.6,9,46,7,Normal,121/79,86,7739,
+177016365,Male,43,Lawyer,7.4,8,83,5,Overweight,130/85,86,6587,Sleep Apnea
+121828526,Female,49,Salesperson,7.0,8,74,3,Normal,140/95,86,5339,Insomnia
+411839594,Female,42,Lawyer,6.8,8,76,3,Normal,115/75,86,6838,
+123480945,Female,56,Lawyer,7.1,8,60,3,Normal,135/90,86,5057,Insomnia
+50823772,Male,47,Teacher,7.6,8,87,4,Overweight,140/95,86,9368,
+784125380,Female,37,Nurse,7.0,6,59,8,Normal,130/85,86,7612,Sleep Apnea
+451227258,Female,33,Teacher,6.0,6,32,6,Overweight,125/80,86,5328,Sleep Apnea
+859748542,Male,35,Engineer,8.0,8,37,5,Normal,125/80,86,4841,
+293815722,Female,49,Doctor,8.2,7,44,8,Normal,125/80,86,6750,
+82388196,Female,39,Nurse,7.5,5,33,4,Normal,120/80,86,3952,Sleep Apnea
+526634492,Female,36,Accountant,6.1,6,42,8,Normal,115/75,86,5392,
+393163164,Female,46,Nurse,7.5,8,79,4,Overweight,130/85,86,6338,Sleep Apnea
+2194856,Male,57,Nurse,8.3,9,78,4,Overweight,140/95,86,8898,Insomnia
+702362398,Female,53,Nurse,8.5,9,68,4,Normal,115/75,86,7597,
+583957515,Male,32,Doctor,5.9,6,89,4,Overweight,130/85,86,6299,
+681839656,Female,59,Teacher,7.0,8,87,5,Overweight,118/75,86,7374,Insomnia
+162949617,Male,30,Doctor,5.8,6,87,6,Normal,135/90,86,8279,Insomnia
+920182009,Female,31,Salesperson,6.6,8,78,6,Overweight,117/76,86,7528,
+212174621,Male,33,Doctor,6.9,6,49,4,Normal,115/75,86,6408,Insomnia
+399608033,Male,31,Doctor,6.6,6,67,7,Normal,130/85,86,7522,
+422361041,Female,42,Doctor,6.7,8,88,7,Normal,140/95,86,8802,
+691641085,Female,30,Engineer,8.1,8,33,6,Normal,126/83,86,3689,Sleep Apnea
+314309522,Male,44,Scientist,7.6,6,56,7,Overweight,120/80,86,5648,Insomnia
+83269893,Male,31,Doctor,5.8,6,86,8,Normal,135/90,86,7602,
+916539327,Male,43,Teacher,6.1,8,88,4,Normal,140/95,86,9395,Insomnia
+753450641,Female,42,Lawyer,7.1,9,41,4,Normal,130/85,86,5440,Sleep Apnea
+971391510,Female,31,Nurse,6.1,7,54,7,Normal,140/90,86,6962,Sleep Apnea
+220671465,Male,42,Nurse,6.9,8,49,4,Obese,115/75,86,6785,
+864812433,Male,31,Doctor,7.5,8,39,8,Normal,115/75,86,6228,
+313011353,Male,30,Engineer,8.1,9,34,7,Normal Weight,125/80,86,4606,
+505645647,Female,51,Accountant,8.4,9,59,5,Normal,125/80,86,4566,
+35767723,Male,30,Doctor,5.8,7,86,7,Normal,130/85,86,9456,
+883678676,Male,30,Engineer,6.9,6,56,8,Normal,125/80,86,5753,Sleep Apnea
+518735449,Male,51,Engineer,8.2,8,52,5,Normal,115/75,86,5885,
+327487340,Male,30,Doctor,6.3,6,41,8,Normal,125/80,86,6648,
+298454844,Female,43,Lawyer,8.0,8,68,3,Obese,130/85,86,7959,Sleep Apnea
+184256057,Female,53,Nurse,6.6,9,47,8,Normal,131/86,86,5488,
+814566219,Male,48,Salesperson,7.3,8,76,5,Overweight,130/85,86,4904,Insomnia
+148412493,Female,56,Nurse,8.0,8,55,5,Normal,140/95,86,7403,
+348542398,Female,39,Engineer,8.3,7,53,4,Overweight,120/80,86,6975,
+295238754,Female,41,Doctor,6.9,6,74,3,Normal,115/75,86,8726,
+622650450,Male,40,Accountant,7.6,8,34,6,Normal,120/80,86,3744,Sleep Apnea
+943650333,Female,46,Salesperson,6.5,6,85,7,Overweight,135/90,86,8628,Insomnia
+548653114,Male,28,Accountant,6.1,6,68,3,Overweight,125/80,86,5936,Sleep Apnea
+221908508,Female,46,Doctor,8.5,9,37,4,Normal,125/80,86,5257,Sleep Apnea
+624943473,Female,47,Engineer,7.2,7,79,4,Normal,135/90,86,8897,Sleep Apnea
+67315022,Male,27,Nurse,5.8,6,83,8,Normal,120/80,86,7699,
+438229520,Female,56,Nurse,6.2,8,77,7,Overweight,140/95,86,8119,Insomnia
+166900775,Male,33,Teacher,6.5,6,62,8,Overweight,120/80,86,5477,
+8965888,Male,51,Lawyer,6.0,6,82,4,Normal,135/90,86,6729,Sleep Apnea
+984646708,Female,40,Doctor,8.4,9,49,4,Obese,115/75,86,8719,
+863814224,Male,32,Doctor,6.1,6,59,6,Overweight,135/90,86,7919,
+549728603,Female,29,Doctor,5.8,6,45,8,Overweight,130/85,86,5425,Sleep Apnea
+753790075,Male,54,Engineer,8.3,6,62,8,Overweight,140/95,86,7878,
+102788316,Female,55,Teacher,7.0,8,85,8,Overweight,140/95,86,8653,Sleep Apnea
+386991208,Male,38,Engineer,6.4,8,38,6,Overweight,130/85,86,6326,
+735173888,Female,49,Nurse,8.3,8,82,5,Overweight,115/75,86,7924,
+421856996,Male,34,Nurse,6.9,5,80,7,Normal Weight,130/85,86,9025,
+414692379,Male,31,Nurse,8.2,8,37,8,Normal,125/80,86,7549,
+744036619,Male,45,Nurse,8.4,9,63,5,Normal,125/80,86,6762,
+446265328,Male,54,Teacher,6.2,7,61,8,Normal,140/95,86,7763,
+204391387,Male,50,Accountant,7.7,8,51,5,Normal,120/80,86,5618,Sleep Apnea
+768732682,Female,56,Engineer,8.0,9,39,4,Overweight,120/80,86,4592,Sleep Apnea
+966397140,Female,52,Nurse,5.9,6,79,6,Overweight,140/95,86,7818,Insomnia
+315900153,Female,55,Lawyer,7.7,8,83,4,Normal,142/92,86,8319,Insomnia
+337416270,Female,38,Nurse,7.9,8,58,3,Normal,130/85,86,6722,
+286669961,Male,29,Engineer,5.9,6,84,6,Normal,135/90,86,6928,Sleep Apnea
+972155361,Male,37,Teacher,6.3,7,83,3,Normal,130/85,86,6136,Sleep Apnea
+525609207,Female,38,Doctor,6.3,7,60,8,Normal,120/80,86,8986,
+179280079,Female,44,Doctor,6.1,8,89,8,Overweight,130/85,86,8864,Insomnia
+856071,Female,42,Lawyer,8.2,7,40,5,Normal,115/75,86,6427,
+868770526,Female,39,Teacher,8.4,8,54,4,Normal,120/80,86,4604,Insomnia
+396831306,Male,47,Teacher,6.6,7,46,8,Normal,135/90,86,7222,Sleep Apnea
+441349640,Male,39,Nurse,6.4,6,90,4,Overweight,140/95,86,10000,Sleep Apnea
+240938191,Male,43,Engineer,6.5,6,82,4,Normal,130/85,86,7990,Insomnia
+94904456,Female,49,Doctor,7.0,6,40,6,Normal,115/75,86,7762,
+537569689,Male,43,Nurse,6.3,6,49,8,Overweight,120/80,86,5864,
+506237443,Female,49,Engineer,7.8,7,59,7,Normal,115/75,86,7578,
+956478249,Female,53,Doctor,7.5,8,53,7,Normal,135/90,86,6238,Sleep Apnea
+548572349,Female,39,Doctor,6.1,9,56,8,Overweight,115/75,86,6920,Sleep Apnea
+17608744,Male,38,Nurse,6.6,7,44,6,Normal,125/80,86,8079,Insomnia
+7781815,Female,34,Sales Representative,8.2,5,41,6,Normal,125/80,86,4442,Insomnia
+681653136,Female,47,Doctor,6.9,7,76,5,Normal,135/90,86,5872,
+124440497,Female,54,Engineer,7.2,7,88,8,Overweight,140/95,86,9425,Sleep Apnea
+11554026,Female,45,Accountant,6.5,7,77,7,Overweight,130/85,86,6387,Insomnia
+166023312,Male,30,Doctor,6.4,6,65,8,Normal,120/80,86,6275,
+539178382,Female,50,Nurse,6.6,7,53,3,Overweight,140/95,86,7263,Sleep Apnea
+1813444,Male,48,Nurse,8.0,8,66,4,Normal,130/85,86,6116,
+573210332,Female,40,Nurse,7.3,7,66,8,Normal,130/85,86,7140,
+41367768,Male,56,Lawyer,8.2,8,64,5,Normal,119/77,86,8170,Insomnia
+30169935,Female,47,Salesperson,7.7,7,44,8,Overweight,130/85,86,7446,
+363409227,Male,31,Nurse,6.4,6,45,8,Normal,120/80,86,5011,
+721385152,Male,35,Doctor,8.1,7,62,7,Overweight,125/80,86,5865,
+521699450,Male,27,Doctor,5.9,6,43,5,Normal,125/80,86,6657,
+759501912,Female,28,Doctor,5.8,6,44,6,Obese,125/80,86,4517,
+720518571,Male,32,Nurse,8.4,8,34,6,Normal Weight,125/80,86,5027,Insomnia
+210389821,Male,30,Accountant,6.3,7,83,4,Normal,115/75,86,6087,Sleep Apnea
+422201029,Male,51,Salesperson,6.1,6,77,3,Overweight,130/85,86,6857,Insomnia
+205134979,Male,30,Nurse,7.8,7,88,8,Overweight,130/85,86,8459,
+695690963,Male,56,Engineer,6.3,7,77,5,Overweight,140/95,86,8146,
+242803530,Male,37,Accountant,6.0,6,48,7,Normal,115/75,86,6460,Insomnia
+922555311,Female,35,Teacher,8.3,9,35,3,Normal,125/80,86,6652,
+94493383,Male,30,Teacher,7.7,8,50,6,Normal Weight,131/86,86,5292,
+171328027,Male,35,Doctor,7.1,8,72,4,Overweight,130/85,86,9703,Insomnia
+202438055,Male,33,Salesperson,7.9,8,64,8,Normal,125/80,86,8774,
+881286291,Female,29,Scientist,6.3,6,59,6,Normal,125/80,86,6205,Sleep Apnea
+628412717,Male,36,Doctor,8.1,8,34,7,Normal,125/80,86,4891,
+598566833,Female,53,Doctor,8.2,9,66,8,Normal,130/85,86,8657,
+816636710,Female,31,Engineer,6.3,6,35,7,Overweight,128/85,86,4495,Sleep Apnea
+300021882,Male,31,Doctor,6.5,6,47,6,Overweight,125/80,86,4749,Sleep Apnea
+383660062,Female,50,Accountant,6.8,7,81,5,Normal,130/85,86,6379,Sleep Apnea
+496441876,Male,38,Salesperson,7.6,7,35,4,Normal Weight,125/80,86,7360,
+364022534,Female,41,Engineer,6.0,6,45,6,Overweight,129/84,86,5560,
+417874220,Male,36,Accountant,7.0,7,36,3,Normal Weight,120/80,86,4234,
+695329737,Female,35,Nurse,7.7,9,83,4,Overweight,130/85,86,8088,
+864318210,Female,46,Lawyer,7.0,6,59,3,Overweight,130/85,86,6082,
+456498754,Male,33,Accountant,6.2,8,60,4,Normal,115/75,86,6965,
+759601477,Male,32,Doctor,6.2,6,67,8,Overweight,120/80,86,6874,
+963783315,Female,53,Engineer,6.5,7,43,6,Overweight,140/95,86,4863,Insomnia
+693835347,Female,36,Doctor,6.8,7,48,8,Obese,115/75,86,6803,
+477368662,Female,57,Accountant,7.2,6,80,4,Overweight,140/95,86,7053,Insomnia
+768585415,Female,40,Teacher,7.8,7,42,6,Normal,120/80,86,7284,
+102861980,Female,49,Accountant,6.3,6,73,4,Overweight,140/95,86,7148,Insomnia
+469477156,Male,29,Nurse,6.5,6,44,6,Overweight,125/80,86,6749,
+243273692,Male,34,Doctor,7.7,7,42,6,Normal,120/80,86,7463,
+350204600,Female,59,Nurse,8.4,9,63,3,Overweight,135/90,86,8014,Sleep Apnea
+818276053,Female,42,Doctor,7.1,8,50,4,Overweight,115/75,86,5259,Sleep Apnea
+130675922,Female,39,Doctor,7.9,8,45,6,Normal,140/90,86,7747,
+401490604,Female,30,Salesperson,7.3,7,64,6,Normal,130/85,86,7865,Sleep Apnea
+759151883,Female,45,Doctor,5.8,6,51,4,Overweight,135/90,86,5323,Sleep Apnea
+342994050,Male,50,Nurse,7.3,8,70,8,Normal,140/95,86,6682,
+714934543,Female,54,Accountant,8.0,7,68,7,Normal,115/75,86,5882,
+675793814,Female,32,Engineer,6.4,6,57,8,Normal,140/90,86,5757,Insomnia
+72675255,Male,28,Doctor,6.0,6,51,8,Normal,130/85,86,5565,Sleep Apnea
+786612737,Female,52,Doctor,7.7,9,83,7,Normal,130/85,86,8151,
+849281290,Female,53,Lawyer,7.9,8,73,4,Normal,135/90,86,9490,
+220296554,Female,41,Accountant,5.9,6,78,4,Overweight,135/90,86,8350,Insomnia
+617541447,Female,49,Lawyer,6.4,6,58,4,Normal,130/85,86,6726,
+415011740,Male,51,Nurse,6.7,6,86,7,Overweight,140/95,86,9986,Sleep Apnea
+960731256,Male,32,Lawyer,6.0,6,49,4,Overweight,130/85,86,7784,Sleep Apnea
+796991730,Male,37,Accountant,8.0,7,80,5,Normal,135/90,86,7522,Sleep Apnea
+772370688,Male,42,Teacher,7.6,6,58,4,Normal,130/85,86,8085,
+411025230,Female,52,Accountant,6.7,6,38,3,Overweight,115/75,86,4053,Sleep Apnea
+299299644,Female,30,Doctor,6.7,6,49,8,Normal,125/80,86,6250,Insomnia
+225088016,Male,40,Accountant,7.4,4,78,7,Normal,130/85,86,7652,Insomnia
+949966192,Female,47,Doctor,6.1,6,64,8,Overweight,140/95,86,8420,Insomnia
+754312230,Male,46,Accountant,5.8,6,73,4,Overweight,140/95,86,9124,
+372386585,Male,40,Nurse,6.3,6,58,7,Normal,140/95,86,6340,Insomnia
+677093433,Male,29,Nurse,6.0,6,55,5,Normal,120/80,86,7561,
+265412,Male,37,Nurse,6.7,6,32,6,Overweight,125/80,86,5231,Insomnia
+34977755,Male,34,Nurse,6.0,7,42,3,Normal,130/85,86,5983,
+932893752,Male,39,Teacher,5.9,6,64,8,Overweight,115/75,86,7092,
+294910121,Female,53,Nurse,7.7,9,58,7,Normal,130/85,86,7656,
+159782793,Male,40,Salesperson,7.8,7,44,5,Normal,125/80,86,5276,
+623415964,Male,31,Lawyer,8.2,9,32,5,Overweight,125/80,86,3000,
+886639792,Female,49,Nurse,7.0,8,84,7,Overweight,140/95,86,8309,
+564529487,Male,31,Nurse,6.0,6,54,7,Normal,130/85,86,4383,Insomnia
+984838016,Female,40,Accountant,7.6,8,62,3,Normal,130/85,86,5460,
+764732031,Female,52,Engineer,6.5,6,59,3,Overweight,140/95,86,7559,Insomnia
+873788195,Male,46,Lawyer,8.4,8,77,4,Normal,115/75,86,7355,
+53507144,Male,43,Nurse,6.0,6,85,3,Normal,140/95,86,5205,Insomnia
+443093732,Female,54,Salesperson,8.1,9,51,5,Overweight,130/85,86,5885,Sleep Apnea
+985979454,Male,37,Nurse,7.2,7,48,6,Overweight,120/80,86,5186,Sleep Apnea
+868544519,Male,30,Software Engineer,7.7,8,41,8,Normal Weight,125/80,86,4223,Insomnia
+188095454,Female,52,Salesperson,7.3,8,49,5,Overweight,140/95,86,5862,Insomnia
+839506799,Female,54,Teacher,6.5,6,84,8,Overweight,140/95,86,10000,Sleep Apnea
+974026336,Male,38,Teacher,6.6,7,79,8,Normal,130/85,86,9424,
+989954752,Male,48,Nurse,8.2,8,50,5,Normal,129/84,86,5793,
+994558637,Female,58,Engineer,8.3,9,44,3,Overweight,128/84,86,5526,Sleep Apnea
+397372495,Male,28,Software Engineer,8.0,7,52,6,Normal,125/80,86,7744,
+472676853,Female,57,Accountant,6.6,7,45,3,Overweight,128/84,86,5501,Sleep Apnea
+3134180,Male,41,Nurse,6.1,6,66,6,Overweight,115/75,86,7784,Sleep Apnea
+318310942,Female,56,Lawyer,6.6,7,51,4,Overweight,140/95,86,6292,Insomnia
+951688837,Male,42,Doctor,8.0,7,72,6,Normal,115/75,86,5980,
+832534132,Male,48,Salesperson,7.3,7,89,4,Normal,140/95,86,9181,
+745437469,Female,37,Engineer,6.4,7,87,4,Normal,140/95,86,7446,
+304827119,Male,35,Scientist,7.1,8,83,4,Normal,128/84,86,7474,
+914753827,Female,54,Accountant,7.8,9,53,5,Overweight,130/85,86,4759,Sleep Apnea
+749754279,Female,54,Engineer,7.7,9,77,8,Overweight,135/90,86,8735,
+352358950,Male,37,Teacher,8.5,9,47,3,Normal,120/80,86,7120,
+770715286,Female,35,Scientist,7.5,8,32,7,Normal,132/87,86,3528,
+41602784,Female,33,Teacher,5.8,6,73,8,Overweight,140/95,86,8676,Insomnia
+815977057,Female,43,Salesperson,8.1,8,79,7,Normal,120/80,86,6409,
+216480890,Female,40,Lawyer,8.0,8,54,3,Overweight,125/80,86,6338,
+950938269,Male,32,Doctor,6.0,6,85,6,Normal,125/82,86,8274,
+179460395,Female,52,Accountant,8.0,8,54,7,Overweight,119/77,86,7516,
+837331534,Male,30,Engineer,8.2,8,33,7,Normal Weight,125/80,86,3995,
+220352188,Female,34,Teacher,5.9,6,60,6,Overweight,130/85,86,7659,Insomnia
+606746532,Female,32,Doctor,6.2,6,77,6,Normal,128/84,86,7563,
+979406319,Female,45,Accountant,7.8,8,62,4,Overweight,115/75,86,8217,
+25392764,Male,53,Engineer,8.1,8,37,7,Overweight,130/85,86,4028,Insomnia
+660258249,Female,37,Teacher,7.2,8,40,4,Normal,115/75,86,5462,Sleep Apnea
+377861688,Female,54,Teacher,7.6,9,57,5,Normal,135/90,86,5605,
+498574906,Female,51,Engineer,8.0,9,89,4,Overweight,135/90,86,7883,
+682848719,Male,44,Teacher,6.4,6,44,8,Normal,135/90,86,4669,
+861329555,Female,57,Accountant,7.8,9,41,5,Normal,130/85,86,4504,
+253307180,Male,34,Nurse,7.2,8,54,7,Normal,125/80,86,6814,
+163776296,Male,31,Teacher,6.6,6,36,6,Normal,120/80,86,4039,
+57221100,Male,43,Nurse,6.4,6,83,3,Overweight,115/75,86,9548,Insomnia
+113196069,Female,41,Doctor,8.5,8,40,7,Normal,125/80,86,5660,
+328402485,Female,35,Teacher,6.5,6,41,3,Normal,125/80,86,4211,
+224837656,Male,51,Doctor,7.9,8,67,8,Overweight,130/85,86,7964,
+828971343,Male,35,Lawyer,6.5,6,36,7,Normal,120/80,86,4993,Sleep Apnea
+58639397,Male,35,Nurse,6.9,6,78,6,Overweight,130/85,86,9001,
+243479406,Female,48,Teacher,7.6,9,60,5,Overweight,130/85,86,8160,
+885667828,Male,53,Engineer,7.9,9,58,3,Overweight,130/85,86,8384,
+599361004,Male,33,Nurse,8.0,6,35,4,Normal,140/90,86,5348,Insomnia
+345767308,Male,28,Accountant,6.0,6,48,7,Normal,125/80,86,5451,
+811668229,Male,42,Salesperson,7.8,9,40,3,Overweight,120/80,86,3990,
+466665054,Female,38,Doctor,7.2,7,60,6,Overweight,130/85,86,8115,
+398990348,Male,41,Nurse,8.0,8,49,5,Normal,125/80,86,7435,
+514815698,Male,32,Doctor,6.3,6,40,5,Normal,125/80,86,5588,Insomnia
+662983359,Female,49,Teacher,6.3,7,46,7,Overweight,140/95,86,6684,Sleep Apnea
+451041298,Female,54,Lawyer,7.2,9,54,5,Overweight,129/84,86,6189,
+780285279,Male,52,Salesperson,5.9,6,82,3,Overweight,140/95,86,8575,Sleep Apnea
+988200882,Female,47,Teacher,8.1,8,35,6,Normal,128/85,86,4987,Sleep Apnea
+428897090,Female,52,Nurse,6.5,8,90,8,Normal,140/95,86,10000,
+411057822,Male,43,Engineer,6.3,6,70,8,Overweight,115/75,86,8952,Insomnia
+261744249,Male,56,Engineer,7.8,9,39,3,Normal,115/75,86,3295,Sleep Apnea
+232290126,Male,30,Engineer,6.8,6,60,7,Overweight,125/80,86,5474,
+778324233,Male,41,Scientist,6.6,8,39,7,Overweight,135/90,86,5983,Insomnia
+300808407,Male,27,Doctor,6.6,5,82,3,Obese,120/80,86,8581,
+577558703,Female,48,Doctor,8.1,8,57,3,Normal,115/75,86,7868,
+227312259,Female,52,Lawyer,7.0,7,41,8,Overweight,120/80,86,3858,Insomnia
+822347786,Male,40,Nurse,5.9,6,81,8,Overweight,135/90,86,6402,Insomnia
+170039648,Male,50,Salesperson,6.5,6,57,3,Overweight,135/90,86,6908,Insomnia
+770029470,Female,56,Engineer,7.7,8,70,5,Normal,130/85,86,6410,
+264269675,Male,52,Doctor,8.3,9,79,5,Overweight,130/85,86,7145,
+62361014,Female,40,Doctor,7.1,8,85,7,Normal Weight,130/86,86,9865,
+604694933,Male,35,Engineer,8.4,9,81,5,Obese,130/85,86,7535,
+724338856,Male,35,Nurse,6.2,5,90,5,Overweight,135/90,86,8023,
+70594511,Male,46,Nurse,6.7,7,47,3,Normal,125/80,86,3799,
+740457725,Female,53,Salesperson,8.4,9,81,5,Normal,130/85,86,7234,
+465348576,Female,49,Engineer,6.8,7,78,7,Normal,135/90,86,8616,Insomnia
+948058153,Male,54,Nurse,7.6,7,88,5,Overweight,130/85,86,10000,
+59170502,Male,29,Doctor,7.5,8,44,6,Normal,125/80,86,6692,
+277368678,Male,42,Teacher,6.3,6,89,6,Overweight,140/95,86,9231,Insomnia
+754539994,Male,35,Nurse,8.4,9,34,4,Normal Weight,125/80,86,3594,
+430357320,Male,40,Lawyer,7.9,8,85,3,Obese,130/85,86,7317,
+466984751,Male,27,Lawyer,6.1,6,87,4,Normal Weight,115/75,86,8280,
+19512921,Female,41,Engineer,8.1,8,77,3,Overweight,120/80,86,9236,
+336677110,Male,41,Engineer,6.0,8,55,3,Overweight,135/90,86,8442,
+258359963,Male,51,Nurse,8.4,9,42,3,Normal Weight,130/85,86,6387,
+400030584,Male,37,Lawyer,6.4,6,79,3,Normal,130/85,86,7258,
+782450115,Female,53,Teacher,8.2,8,71,8,Normal,130/85,86,8529,
+390767716,Male,30,Lawyer,5.8,6,54,4,Overweight,115/75,86,5819,Insomnia
+943816617,Male,50,Nurse,8.1,7,65,3,Normal,130/85,86,8201,
+714662198,Male,28,Teacher,7.9,8,69,4,Normal Weight,125/80,86,7409,
+467364566,Female,31,Sales Representative,6.5,7,61,6,Normal,120/80,86,7124,
+367047046,Male,40,Salesperson,6.4,6,72,8,Overweight,125/80,86,8586,Insomnia
+512501584,Male,34,Doctor,7.2,5,42,4,Normal,125/80,86,5637,
+2697318,Female,54,Lawyer,7.4,8,46,3,Overweight,125/82,86,5245,Sleep Apnea
+151993350,Male,37,Nurse,5.8,6,64,7,Normal,135/90,86,6430,Insomnia
+860758461,Male,35,Lawyer,6.9,6,86,7,Normal,140/95,86,10000,
+258816708,Male,37,Lawyer,6.1,6,67,4,Overweight,130/85,86,8778,
+747970171,Male,31,Doctor,6.1,6,86,6,Normal,135/90,86,9675,Sleep Apnea
+372183418,Female,41,Accountant,7.0,6,55,5,Obese,135/90,86,6173,
+347152583,Male,51,Doctor,8.1,8,81,3,Normal Weight,130/85,86,7374,Sleep Apnea
+938659278,Female,51,Engineer,6.8,8,75,8,Normal,140/95,86,7093,Insomnia
+469719270,Male,39,Lawyer,6.6,6,85,7,Overweight,130/85,86,8087,
+22239119,Male,34,Engineer,6.4,5,71,7,Normal,135/90,86,5832,
+449958885,Female,54,Engineer,6.8,8,34,4,Overweight,135/90,86,4575,Insomnia
+913728204,Male,45,Doctor,5.9,4,78,8,Obese,140/95,86,8292,Sleep Apnea
+134617105,Female,45,Doctor,6.9,7,73,4,Normal,125/82,86,7131,Sleep Apnea
+588682704,Male,28,Nurse,6.3,6,34,3,Normal Weight,125/80,86,4286,Sleep Apnea
+774099445,Male,29,Engineer,6.3,6,81,6,Normal,130/85,86,6387,Insomnia
+980595633,Male,46,Salesperson,8.3,8,40,3,Normal Weight,117/76,86,6016,
+468956702,Male,48,Doctor,6.5,7,72,5,Normal,140/95,86,7247,
+135363985,Male,46,Salesperson,7.9,9,58,5,Normal,120/80,86,4735,Sleep Apnea
+71577519,Male,42,Lawyer,7.3,6,86,5,Overweight,135/90,86,9359,
+534335351,Female,51,Teacher,7.3,6,50,8,Overweight,130/85,86,7117,Sleep Apnea
+892754342,Male,47,Nurse,6.8,7,87,5,Normal,135/90,86,6975,
+877041761,Female,53,Nurse,5.9,6,63,3,Overweight,135/90,86,6016,
+525023760,Female,39,Engineer,8.0,8,54,6,Overweight,128/84,86,5799,Insomnia
+580490038,Female,29,Salesperson,6.0,6,84,7,Overweight,120/80,86,7817,Insomnia
+512781834,Male,54,Lawyer,8.3,8,43,3,Overweight,120/80,86,7011,
+984921128,Male,32,Accountant,6.7,6,33,8,Normal,125/80,86,4707,
+922817155,Male,37,Nurse,6.2,6,50,6,Overweight,140/90,86,5350,Insomnia
+788256121,Male,37,Engineer,7.5,7,48,3,Overweight,120/80,86,7401,Sleep Apnea
+561696440,Male,44,Salesperson,7.4,7,87,5,Overweight,130/85,86,9397,Sleep Apnea
+128305473,Female,30,Doctor,6.9,8,51,8,Normal,125/80,86,6741,
+729105139,Male,32,Engineer,6.4,6,35,6,Normal,125/80,86,4724,
+519917854,Male,40,Lawyer,7.5,8,64,3,Overweight,131/86,86,8375,
+671849505,Female,39,Doctor,7.8,8,58,4,Normal Weight,120/80,86,6444,
+909708183,Female,43,Nurse,7.5,7,39,6,Overweight,125/80,86,4728,Sleep Apnea
+59631152,Male,56,Engineer,7.1,4,77,4,Overweight,130/85,86,6979,Sleep Apnea
+305021716,Female,32,Doctor,6.0,6,77,7,Normal,115/75,86,7627,
+595707159,Male,38,Accountant,6.8,8,51,4,Overweight,125/80,86,6766,
+163353261,Male,37,Engineer,5.8,6,90,4,Overweight,139/91,86,9735,Sleep Apnea
+176309604,Male,54,Nurse,7.4,8,81,7,Overweight,140/95,86,8442,
+937087495,Female,49,Nurse,7.8,7,82,4,Normal,140/95,86,8829,
+7196824,Female,54,Lawyer,7.0,8,84,5,Overweight,140/95,86,5972,
+108106763,Male,58,Salesperson,7.6,9,74,3,Overweight,140/95,86,7029,Sleep Apnea
+309347542,Female,34,Teacher,6.3,6,59,4,Overweight,130/85,86,5706,Sleep Apnea
+79736758,Female,35,Teacher,8.4,9,43,3,Normal Weight,125/80,86,6707,
+159748129,Female,29,Teacher,7.8,7,35,8,Normal Weight,125/80,86,3422,Insomnia
+1152697,Female,48,Engineer,8.4,9,56,5,Normal,120/80,86,6025,
+295448803,Female,37,Teacher,6.9,7,79,3,Overweight,130/85,86,10000,
+686347113,Male,28,Doctor,6.0,8,42,8,Normal,125/80,86,6956,
+910321538,Female,36,Teacher,8.3,7,41,8,Obese,125/80,86,4089,
+915472970,Male,32,Engineer,6.7,8,34,8,Normal,125/80,86,4895,
+407423553,Female,56,Lawyer,8.3,9,34,3,Normal,131/86,86,6652,
+947285365,Female,50,Salesperson,7.0,7,56,4,Overweight,135/90,86,7382,Sleep Apnea
+802723432,Female,48,Nurse,7.8,8,45,4,Normal,128/84,86,5764,
+276724308,Female,52,Lawyer,7.2,8,48,8,Overweight,130/85,86,7249,
+767709095,Female,39,Doctor,6.2,6,40,8,Normal,115/75,86,5181,
+191694344,Male,40,Doctor,7.4,8,56,8,Normal,130/85,86,8362,
+365683064,Female,31,Doctor,6.9,6,50,6,Obese,125/80,86,6311,Sleep Apnea
+323362415,Male,49,Lawyer,8.0,8,78,3,Normal,130/85,86,6528,Sleep Apnea
+896463571,Male,53,Nurse,7.7,8,87,3,Normal,135/90,86,6916,Sleep Apnea
+64913203,Female,29,Software Engineer,6.1,7,90,6,Normal Weight,135/90,86,7939,
+853955137,Female,54,Lawyer,5.9,6,64,5,Overweight,140/95,86,7474,
+712854144,Male,35,Doctor,8.4,9,35,4,Normal Weight,125/80,86,3912,
+492004357,Female,43,Doctor,6.9,7,79,6,Normal,130/85,86,8816,Insomnia
+23466686,Male,54,Lawyer,7.7,6,56,7,Normal,130/85,86,6983,
+552105141,Female,35,Lawyer,6.6,8,48,7,Overweight,130/85,86,3667,Insomnia
+910302115,Female,35,Nurse,6.5,6,57,6,Normal,135/90,86,7288,
+888214049,Male,43,Accountant,7.0,6,53,7,Normal,140/95,86,7761,Insomnia
+94125233,Male,33,Engineer,7.4,7,59,3,Obese,125/80,86,6893,Sleep Apnea
+822086511,Female,50,Doctor,6.2,6,74,6,Overweight,130/85,86,6595,Insomnia
+342070075,Female,36,Engineer,6.3,7,85,4,Overweight,140/95,86,8608,
+355992047,Female,54,Engineer,7.2,7,59,4,Overweight,130/85,86,7683,
+898138292,Female,51,Nurse,7.7,9,86,5,Normal,140/95,86,7695,
+779493549,Female,45,Engineer,8.1,8,70,4,Normal,130/85,86,7321,
+331511980,Female,37,Teacher,7.3,7,41,8,Normal,132/87,86,4808,
+898732559,Male,43,Doctor,6.3,7,55,8,Overweight,120/80,86,5883,
+131643571,Male,50,Salesperson,6.3,8,86,5,Overweight,140/95,86,9272,Sleep Apnea
+727865264,Male,43,Doctor,5.9,6,63,6,Normal,140/95,86,6624,Insomnia
+837035774,Female,55,Accountant,8.5,9,64,3,Normal,140/90,86,7738,
+766244106,Female,46,Nurse,7.4,9,85,4,Normal,135/90,86,7346,
+869544702,Female,53,Teacher,8.0,9,39,5,Normal,129/84,86,5205,
+94401774,Male,31,Nurse,6.0,6,62,6,Normal,115/75,86,6201,Sleep Apnea
+843689646,Female,35,Nurse,6.1,6,47,3,Normal,120/80,86,6811,Sleep Apnea
+386035292,Female,39,Nurse,7.6,6,79,6,Overweight,135/90,86,8708,Insomnia
+194827526,Female,53,Lawyer,7.5,8,64,8,Overweight,135/90,86,6612,
+748220278,Male,35,Nurse,8.3,9,60,4,Normal,125/80,86,6148,
+849988412,Male,46,Nurse,6.5,7,60,5,Normal,130/85,86,7561,
+851516383,Female,46,Nurse,7.0,8,33,4,Normal,140/90,86,4613,
+331816440,Female,35,Teacher,6.9,6,39,8,Overweight,115/75,86,5055,
+833887029,Female,55,Nurse,6.8,8,76,3,Overweight,140/95,86,9137,Insomnia
+257024968,Female,45,Doctor,8.4,9,42,8,Normal Weight,120/80,86,5900,
+578330077,Male,28,Engineer,5.9,6,82,7,Overweight,120/80,86,7612,
+609016380,Male,32,Accountant,7.3,8,49,3,Normal,125/80,86,6856,
+615810905,Male,45,Lawyer,6.5,6,54,6,Overweight,140/95,86,6423,Insomnia
+965232013,Female,53,Lawyer,7.1,9,60,5,Normal,130/85,86,6988,
+639984042,Male,34,Nurse,6.3,6,50,6,Normal,130/85,86,5214,Sleep Apnea
+394223406,Male,41,Doctor,7.6,7,49,7,Normal,120/80,86,7410,
+583010570,Male,38,Sales Representative,6.6,8,48,4,Normal,125/80,86,6640,
+715325015,Female,51,Engineer,7.7,9,48,4,Overweight,130/85,86,5529,Insomnia
+643654595,Female,43,Engineer,6.4,8,90,3,Overweight,140/95,86,7676,
+803809860,Female,51,Teacher,7.8,9,68,5,Obese,135/90,86,6787,Sleep Apnea
+868729617,Male,51,Lawyer,7.5,8,65,3,Normal,135/90,86,5196,

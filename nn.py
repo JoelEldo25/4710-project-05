@@ -5,8 +5,8 @@ from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 
 batch_size=64
-learning_rate=0.0001
-epochs=10000
+learning_rate=0.001
+epochs=3000
 train_size=300
 test_size=73
 
