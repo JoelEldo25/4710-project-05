@@ -13,7 +13,7 @@ train_size=300
 test_size=73
 times = int(sys.argv[1]) if len(sys.argv) > 1 else 1
 
-
+labels = ["Gender", "Age", "Sleep Duration","Physical Activity Level", "Stress Level","BMI Category","Blood Pressure","Heart Rate","Daily Steps","Sleep Disorder"]
 x_vals = [i+1 for i in range(0, epochs, 10)]
 val_acc = []
 train_acc = []
@@ -23,8 +23,8 @@ val_loss = []
 train_loss = []
 val_agg = []
 train_agg = []
-cols_acc = [[],[],[],[],[],[],[],[]]
-cols_loss = [[],[],[],[],[],[],[],[]]
+cols_acc = [[],[],[],[],[],[],[],[],[],[]]
+cols_loss = [[],[],[],[],[],[],[],[],[],[]]
 
 
 
@@ -33,7 +33,7 @@ class SleepNetwork(nn.Module):
         super().__init__()
         self.flatten = nn.Flatten()
         self.layers = nn.Sequential(
-            nn.Linear(8,20),
+            nn.Linear(10,20),
             nn.ReLU(),
             nn.Linear(20,20),
             nn.ReLU(),
@@ -119,7 +119,7 @@ for i in range(times):
     train_acc_agg.append(train_acc)
     train_loss = []
     train_acc = []
-    for i in range(8):
+    for i in range(10):
         dataset.shuffle(i)
         var_dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
         loss,acc = test(var_dataloader, model, loss_fn, 0)
@@ -175,14 +175,14 @@ if times > 1:
     plt.xlabel('Epoch')
     plt.show()
 
-for i in range(8):
-    print("Column",i)
-    print("Mean Loss for column",i,"-",statistics.mean(cols_loss[i]))
+for i in range(10):
+    print("Column",labels[i])
+    print("Mean Loss -",statistics.mean(cols_loss[i]))
     if(times > 1):
-        print("Stdev of Loss for column",i,"-",statistics.stdev(cols_loss[i]))
-    print("Mean accuracy for column",i,"-",statistics.mean(cols_acc[i]))
+        print("Stdev of Loss -",statistics.stdev(cols_loss[i]))
+    print("Mean accuracy -",statistics.mean(cols_acc[i]))
     if (times > 1):
-        print("Stdev of accuracry for column",i,"-",statistics.stdev(cols_acc[i]))
+        print("Stdev of accuracy -",statistics.stdev(cols_acc[i]))
     print()
 
 

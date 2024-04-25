@@ -132,10 +132,9 @@ if times > 1:
     plt.show()
 
 for i in range(10):
-    print("Column",i)
-    print("Mean Loss for shuffled",labels[i],"-",statistics.mean(cols[i]))
+    print("Column",labels[i])
+    print("Mean Loss -",statistics.mean(cols[i]))
     if(times > 1):
-        print("Stdev of Loss for column",i,"-",statistics.stdev(cols[i]))
-        print("Stdev of Loss for column",i,"-",statistics.stdev(cols[i]))
+        print("Stdev of Loss -",statistics.stdev(cols[i]))
 
 
