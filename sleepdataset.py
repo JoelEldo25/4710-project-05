@@ -1,6 +1,6 @@
 import csv
 
-import torch
+from random import randint
 from torch.utils.data import Dataset
 from torch import tensor
 
@@ -24,5 +24,18 @@ class SleepDataset(Dataset):
 
     def __getitem__(self, index):
         return self.data[index], self.targets[index]
+
+    def shuffle(self, index):
+        leng = self.__len__()
+        for i,tens in enumerate(self.data):
+            if i == leng-1:
+                break
+            randval = randint(i, leng-1)
+            temp = tens[index]
+            tens[index] = self.data[randval][index]
+            self.data[randval][index] = temp
+
+
+
 
 
