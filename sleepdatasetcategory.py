@@ -27,4 +27,12 @@ class SleepDatasetCategorical(Dataset):
     def __getitem__(self, index):
         return self.data[index], self.targets[index]
 
-
+    def shuffle(self, index):
+        leng = self.__len__()
+        for i, tens in enumerate(self.data):
+            if i == leng - 1:
+                break
+            randval = randint(i, leng - 1)
+            temp = tens[index]
+            tens[index] = self.data[randval][index]
+            self.data[randval][index] = temp
