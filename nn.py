@@ -13,6 +13,7 @@ train_size=300
 test_size=73
 times = int(sys.argv[1]) if len(sys.argv) > 1 else 1
 
+labels = ["Gender", "Age", "Sleep Duration","Physical Activity Level", "Stress Level","BMI Category","Blood Pressure","Heart Rate","Daily Steps","Sleep Disorder"]
 x_vals = [i+1 for i in range(0, epochs, 10)]
 val_loss = []
 train_loss = []
@@ -132,7 +133,7 @@ if times > 1:
 
 for i in range(10):
     print("Column",i)
-    print("Mean Loss for column",i,"-",statistics.mean(cols[i]))
+    print("Mean Loss for shuffled",labels[i],"-",statistics.mean(cols[i]))
     if(times > 1):
         print("Stdev of Loss for column",i,"-",statistics.stdev(cols[i]))
         print("Stdev of Loss for column",i,"-",statistics.stdev(cols[i]))
