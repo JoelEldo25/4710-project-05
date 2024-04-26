@@ -180,9 +180,9 @@ for i in range(10):
     print("Mean Loss -",statistics.mean(cols_loss[i]))
     if(times > 1):
         print("Stdev of Loss -",statistics.stdev(cols_loss[i]))
-    print("Mean accuracy -",statistics.mean(cols_acc[i]))
+    print("Mean inaccuracy -",statistics.mean(cols_acc[i]))
     if (times > 1):
-        print("Stdev of accuracy -",statistics.stdev(cols_acc[i]))
+        print("Stdev of inaccuracy -",statistics.stdev(cols_acc[i]))
     print()
 
 
