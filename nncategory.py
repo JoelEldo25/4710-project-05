@@ -94,7 +94,7 @@ def test(dataloader, model, loss_fn, iter):
     return test_loss, 1-correct
 
 dataset = SleepDatasetCategorical("ss.csv")
-for i in range(times):
+for j in range(times):
     train_dataset,test_dataset=torch.utils.data.random_split(dataset,(train_size,test_size))
 
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
@@ -129,7 +129,7 @@ for i in range(times):
 
     val_loss = []
     val_acc = []
-    print("Done with iteration",i+1)
+    print("Done with iteration",j+1)
 
 
 val_acc = [statistics.mean([val_acc_agg[time][epoch] for time in range(times)]) for epoch in range(int(epochs/10+1))]
